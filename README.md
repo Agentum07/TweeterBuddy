@@ -3,4 +3,4 @@
 Project for orbital 2021.
 
 # Developers
-Abhishek Gupta and Nigel Tan.
+[Abhishek Gupta](https://github.com/Agentum07) and [Nigel Tan](https://github.com/nniiggeell).
