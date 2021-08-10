@@ -6,18 +6,9 @@
 </a>
 
 
-A working Twitter clone written in Flutter using Firebase auth,realtime,firestore database and storage.
-
-
-## Download App
-<a href="https://play.google.com/store/apps/details?id=com.thealphamerc.flutter_twitter_clone"><img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" width="200"></img></a>
-
-
+A working Twitter clone written in Flutter using Firebase auth, realtime, firestore database and storage.
 
 ## Features
-* App features is mentioned at project section [ Click here](https://github.com/TheAlphamerc/flutter_twitter_clone/projects/1)
-* Messaging chat section status can be seen at [here](https://github.com/TheAlphamerc/flutter_twitter_clone/projects/2)
-
  :boom: Fwitter app now uses both firebase `realtime` and `firestore` database.:boom:
 * In branch **firetore** Fwitter uses `Firestore` database for app. 
 * In branch **Master** and **realtime_db** Fwitter uses `Firebase Realtime` database for app.
