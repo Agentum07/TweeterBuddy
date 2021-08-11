@@ -179,6 +179,8 @@ class AuthState extends AppState {
             accessToken: session.token,
             secret: session.secret
         );
+        accessToken = session.token;
+        secret = session.secret;
         user = (await _firebaseAuth.signInWithCredential(credential)).user;
         userId = user.uid;
         isSignInWithTwitter = true;
