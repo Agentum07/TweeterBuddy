@@ -200,20 +200,22 @@ class _ComposeTweetReplyPageState extends State<ComposeTweetPage> {
     }
 
     var authState = Provider.of<AuthState>(context, listen: false);
+    String tokenCopy = authState.accessToken;
+    String secretCopy = authState.secret;
+
 
     final twitterApi = TwitterApi(
       client: TwitterClient(
         consumerKey: 'R4uXpSdJBRexyRpAWbrt9yFl0',
         consumerSecret: 'UVjGJTs2gQfpU640kKGeWPlD1rLxmb3XMX8AjL5ktF1VlT2JMp',
-        token: authState.accessToken,
-        secret: authState.secret,
+        token: tokenCopy,
+        secret: secretCopy,
       ),
     );
 
-    String tweet = '';
-    cprint(tweet.length.toString());
+
     await twitterApi.tweetService.update(
-      status: ''
+      status: _textEditingController.text
     );
     _submitButton(); // posting to the clone
     Navigator.of(context, rootNavigator: true)
