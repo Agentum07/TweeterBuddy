@@ -111,7 +111,6 @@ class ComposeTweetState extends ChangeNotifier {
   ///  {
   ///    "key": "FCM server key here"
   ///  } ```
-  /// For more detail visit:- https://github.com/TheAlphamerc/flutter_twitter_clone/issues/28#issue-611695533
   /// For package detail check:-  https://pub.dev/packages/firebase_remote_config#-readme-tab-
   Future<Null> getFCMServerKey() async {
     /// If FCM server key is already fetched then no need to fetch it again.
