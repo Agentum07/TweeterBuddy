@@ -16,7 +16,7 @@ class AboutPage extends StatelessWidget {
       appBar: CustomAppBar(
         isBackButton: true,
         title: customTitleText(
-          'About Fwitter',
+          'About TweeterBuddy',
         ),
       ),
       body: ListView(
@@ -32,7 +32,7 @@ class AboutPage extends StatelessWidget {
             showDivider: false,
             onPressed: () {
               Utility.launchURL(
-                  "https://github.com/TheAlphamerc/flutter_twitter_clone/issues");
+                  "https://github.com/Agentum07/TweeterBuddyissues");
             },
           ),
           HeaderWidget('Legal'),
@@ -61,18 +61,7 @@ class AboutPage extends StatelessWidget {
             },
           ),
           HeaderWidget('Developer'),
-          SettingRowWidget("Github", showDivider: true, onPressed: () {
-            Utility.launchURL("https://github.com/TheAlphamerc");
-          }),
-          SettingRowWidget("LinkidIn", showDivider: true, onPressed: () {
-            Utility.launchURL("https://www.linkedin.com/in/thealphamerc/");
-          }),
-          SettingRowWidget("Twitter", showDivider: true, onPressed: () {
-            Utility.launchURL("https://twitter.com/TheAlphaMerc");
-          }),
-          SettingRowWidget("Blog", showDivider: true, onPressed: () {
-            Utility.launchURL("https://dev.to/thealphamerc");
-          }),
+          ),
         ],
       ),
     );
